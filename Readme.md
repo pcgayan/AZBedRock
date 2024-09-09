@@ -1,4 +1,3 @@
-```markdown
 # Device Down Detector
 
 ## Description
@@ -167,4 +166,3 @@ Follow these steps to run the Azure Functions project:
 5. **Review the response:**
 
     - Check the response status code, body, and headers to ensure the API is functioning as expected.
-```
