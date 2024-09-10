@@ -20,7 +20,7 @@ import java.util.Optional;
 /**
  * Azure Functions with HTTP Trigger.
  */
-public class Function {
+public final class Function {
     /**
      * This function listens at endpoint "/api/HttpExample". Two ways to invoke it using "curl" command in bash:
      * 1. curl -d "HTTP Body" {your host}/api/HttpExample
@@ -30,7 +30,7 @@ public class Function {
     private final String connectionString = System.getenv("AZURE_SQL_CONNECTIONSTRING");
 
     @FunctionName("GetDownIPAddresses")
-    public HttpResponseMessage run(
+    public final HttpResponseMessage run(
             @HttpTrigger(
                 name = "req",
                 methods = {HttpMethod.GET, HttpMethod.POST},

@@ -13,13 +13,9 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 
-/**
- * Unit test for Function class.
- */
+
 public class FunctionTest {
-    /**
-     * Unit test for HttpTriggerJava method.
-     */
+
     @Test
     public void testHttpTriggerJava() throws Exception {
         // Setup
