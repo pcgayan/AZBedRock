@@ -1,3 +1,5 @@
+---
+
 # Device Down Detector
 
 ## Description
@@ -64,105 +66,9 @@ Follow these steps to run the Azure Functions project:
 
 ## How to Test via Postman
 
-### Spring Boot Project
+Postman collections for testing the API endpoints are available at the following locations:
 
-#### Test Locally
+- **Azure Functions:** [Azure Functions Postman Collection](https://github.com/pcgayan/AZBedRock/blob/main/DeviceDownDetector/Postman%20Collection/Azure%20Functions.postman_collection.json)
+- **Spring Boot:** [Spring Boot Postman Collection](https://github.com/pcgayan/AZBedRock/blob/main/DeviceDownDetectorSpring/Postman%20Collection/Spring.postman_collection.json)
 
-1. **Open Postman.**
-
-2. **Create a new request:**
-
-    - Set the request method to `GET`.
-    - Use the following URL:
-
-      ```
-      http://localhost:<port>/api/devices/down
-      ```
-
-    - Replace `<port>` with the actual port number your Spring Boot application is running on.
-
-3. **Send the request:**
-
-    - Click `Send` to test the API endpoint.
-
-4. **Review the response:**
-
-    - Check the response status code, body, and headers to ensure the API is functioning as expected.
-
-#### Test Cloud
-
-1. **Open Postman.**
-
-2. **Create a new request:**
-
-    - Set the request method to `GET`.
-    - Use the following URL:
-
-      ```
-      https://downdetectorspring.test.azuremicroservices.io/downdetector-184756/default/api/devices/down
-      ```
-
-3. **Set up Basic Auth:**
-
-    - In the `Authorization` tab, select `Basic Auth`.
-    - Enter your Azure app credentials (username and password).
-
-4. **Send the request:**
-
-    - Click `Send` to test the API endpoint.
-
-5. **Review the response:**
-
-    - Check the response status code, body, and headers to ensure the API is functioning as expected.
-
-### Azure Functions Project
-
-#### Test Locally
-
-1. **Open Postman.**
-
-2. **Create a new request:**
-
-    - Set the request method to `GET`.
-    - Use the following URL:
-
-      ```
-      http://localhost:7071/api/GetDownIPAddresses?
-      ```
-
-3. **Send the request:**
-
-    - Click `Send` to test the API endpoint.
-
-4. **Review the response:**
-
-    - Check the response status code, body, and headers to ensure the API is functioning as expected.
-
-#### Test Cloud Demo
-
-1. **Open Postman.**
-
-2. **Create a new request:**
-
-    - Set the request method to `GET`.
-    - Use the following URL:
-
-      ```
-      https://iotservices-18293.azurewebsites.net/api/GetDownIPAddresses?
-      ```
-
-3. **Add Authentication headers:**
-
-    - In the `Headers` tab, add the following key-value pair:
-
-      ```
-      x-functions-key: <Your Function Key>
-      ```
-
-4. **Send the request:**
-
-    - Click `Send` to test the API endpoint.
-
-5. **Review the response:**
-
-    - Check the response status code, body, and headers to ensure the API is functioning as expected.
+---
