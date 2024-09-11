@@ -23,12 +23,14 @@ Follow these steps to run the project:
 3. **Package the project:**
 
    ```bash
+   AZURE_SQL_CONNECTIONSTRING="your SQL connection string" \
    mvn package
    ```
 
 4. **Run the Azure Functions locally:**
 
    ```bash
+   AZURE_SQL_CONNECTIONSTRING="your SQL connection string" \
    mvn azurefunctions:run
    ```
 

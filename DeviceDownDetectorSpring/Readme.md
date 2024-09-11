@@ -23,12 +23,18 @@ Follow these standard steps to run the Spring Boot project:
 3. **Build the project:**
 
    ```bash
+   AZURE_SQLSERVER_URL="your SQL server URL" \
+   AZURE_SQLSERVER_USERNAME="your SQL server username" \
+   AZURE_SQLSERVER_PASSWORD="your SQL server password" \
    mvn clean install
    ```
 
 4. **Run the Spring Boot application:**
 
    ```bash
+   AZURE_SQLSERVER_URL="your SQL server URL" \
+   AZURE_SQLSERVER_USERNAME="your SQL server username" \
+   AZURE_SQLSERVER_PASSWORD="your SQL server password" \
    mvn spring-boot:run
    ```
 

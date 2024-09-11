@@ -27,12 +27,18 @@ Follow these steps to run the Spring Boot project:
 3. **Build the project:**
 
    ```bash
+   AZURE_SQLSERVER_URL="your SQL server URL" \
+   AZURE_SQLSERVER_USERNAME="your SQL server username" \
+   AZURE_SQLSERVER_PASSWORD="your SQL server password" \
    mvn clean install
    ```
 
 4. **Run the Spring Boot application:**
 
    ```bash
+   AZURE_SQLSERVER_URL="your SQL server URL" \
+   AZURE_SQLSERVER_USERNAME="your SQL server username" \
+   AZURE_SQLSERVER_PASSWORD="your SQL server password" \
    mvn spring-boot:run
    ```
 
@@ -55,12 +61,14 @@ Follow these steps to run the Azure Functions project:
 3. **Package the project:**
 
    ```bash
+   AZURE_SQL_CONNECTIONSTRING="your SQL connection string" \
    mvn package
    ```
 
 4. **Run the Azure Functions locally:**
 
    ```bash
+   AZURE_SQL_CONNECTIONSTRING="your SQL connection string" \
    mvn azurefunctions:run
    ```
 
